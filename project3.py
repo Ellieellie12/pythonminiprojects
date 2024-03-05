@@ -10,7 +10,9 @@ def generate_problem():
   operator = random.choice(OPERATORS)
 
   expr = str(left) + ' ' + operator + ' ' + str(right)
+  answer = eval(expr)
   print(expr)
-  return(expr)
+  return expr , answer
 
-generate_problem()
+expr, answer = generate_problem()
+print(expr, answer)
