@@ -7,9 +7,6 @@ def roll():
 
     return roll
 
-# value = roll()
-# print(value)
-
 while True:
     players = input('Enter the number of players(2 - 4): ')
     if players.isdigit():
